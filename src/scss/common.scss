@@ -1,0 +1,42 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.decor {
+	background: linear-gradient(
+		141.54deg,
+		rgb(255, 255, 255) 50.144%,
+		rgb(150, 150, 150) 108.811%
+	);
+	border-radius: 50%;
+	// .decor__prewiew
+	&__prewiew {
+		position: absolute;
+		top: 30px;
+		right: -86px;
+		width: 40%;
+		height: 523px;
+
+		z-index: -4;
+		filter: blur(70px);
+	}
+
+	// .decor__services
+
+	&__services {
+		position: absolute;
+		top: 30px;
+		left: 36%;
+		width: 520px;
+		height: 520px;
+		background: linear-gradient(
+			141.54deg,
+			rgb(255, 255, 255) 50.016%,
+			rgb(122, 122, 122) 108.129%
+		);
+	}
+}
+
+p {
+	&:not(:last-child) {
+		margin-bottom: rem(10);
+	}
+}

@@ -1,0 +1,21 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip21_716">
+			<rect id="Отправить письмо" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="фрейм 7" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip21_716)">
+		<path id="path" d="M22.73 11.98L22.75 12C22.75 12.42 22.42 12.75 22 12.75C21.58 12.75 21.25 12.42 21.25 12L21.27 11.98L22.73 11.98ZM11.98 18.77L12 18.75C12.42 18.75 12.75 19.08 12.75 19.5C12.75 19.92 12.42 20.25 12 20.25L11.98 20.23L11.98 18.77Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M22 12L22 4.5L12 4.5L2 4.5L2 12L2 19.5L12 19.5" stroke="#808080" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M15.02 17.73L15 17.75C14.58 17.75 14.25 17.42 14.25 17C14.25 16.58 14.58 16.25 15 16.25L15.02 16.27L15.02 17.73ZM21.98 16.27L22 16.25C22.42 16.25 22.75 16.58 22.75 17C22.75 17.42 22.42 17.75 22 17.75L21.98 17.73L21.98 16.27Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M15 17L22 17" stroke="#808080" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M18.99 15.03L18.96 15.03C18.67 14.73 18.67 14.26 18.96 13.96C19.26 13.67 19.73 13.67 20.03 13.96L20.03 13.99L18.99 15.03ZM20.03 20L20.03 20.03C19.73 20.32 19.26 20.32 18.96 20.03C18.67 19.73 18.67 19.26 18.96 18.96L18.99 18.96L20.03 20Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M19.5 14.5L22 17L19.5 19.5" stroke="#808080" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M1.57 5.09L1.54 5.09C1.21 4.84 1.14 4.38 1.39 4.04C1.65 3.71 2.11 3.64 2.45 3.9L2.45 3.92L1.57 5.09ZM21.54 3.92L21.55 3.9C21.88 3.64 22.34 3.71 22.6 4.04C22.85 4.38 22.78 4.84 22.45 5.09L22.42 5.09L21.54 3.92Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M2 4.5L12 12L22 4.5" stroke="#808080" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>

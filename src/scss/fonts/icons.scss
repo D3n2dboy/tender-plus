@@ -1,0 +1,89 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-Email:before {
+	content: "\e917";
+}
+._icon-adderd:before {
+	content: "\e900";
+}
+._icon-arrow-left:before {
+	content: "\e901";
+}
+._icon-arrow-left-light:before {
+	content: "\e902";
+}
+._icon-arrow-right:before {
+	content: "\e903";
+}
+._icon-arrow-right-light:before {
+	content: "\e904";
+}
+._icon-bell:before {
+	content: "\e905";
+}
+._icon-calcul:before {
+	content: "\e906";
+}
+._icon-calendar:before {
+	content: "\e907";
+}
+._icon-cross-circle-white:before {
+	content: "\e908";
+}
+._icon-edit:before {
+	content: "\e909";
+}
+._icon-email:before {
+	content: "\e90a";
+}
+._icon-eye:before {
+	content: "\e90b";
+}
+._icon-geolok:before {
+	content: "\e90c";
+}
+._icon-info:before {
+	content: "\e90d";
+}
+._icon-like:before {
+	content: "\e90e";
+}
+._icon-lk-light:before {
+	content: "\e90f";
+}
+._icon-marker:before {
+	content: "\e910";
+}
+._icon-phone:before {
+	content: "\e911";
+}
+._icon-phone-light:before {
+	content: "\e912";
+}
+._icon-resive-email:before {
+	content: "\e913";
+}
+._icon-tic:before {
+	content: "\e914";
+}
+._icon-time-light:before {
+	content: "\e915";
+}
+._icon-write:before {
+	content: "\e916";
+}
