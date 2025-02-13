@@ -2033,19 +2033,18 @@ main {
   }
 }
 
-@media (max-width: 556.98px) {
-  .header__phone {
-    display: block;
-    margin: 0;
-  }
-}
-
 @media (max-width: 556px) {
   .infomation-header__container {
     font-size: 1rem;
   }
 
   .infomation-header__label {
+    display: none;
+  }
+}
+
+@media (max-width: 555.98px) {
+  .header__contacts .header__phone {
     display: none;
   }
 }
