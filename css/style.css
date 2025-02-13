@@ -2033,11 +2033,14 @@ main {
   }
 }
 
-@media (max-width: 556px) {
+@media (max-width: 556.98px) {
   .header__phone {
-    display: none;
+    display: block;
+    margin: 0;
   }
+}
 
+@media (max-width: 556px) {
   .infomation-header__container {
     font-size: 1rem;
   }
