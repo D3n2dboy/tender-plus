@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250215173932">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250305155731">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,13 +24,13 @@
 						<div class="infomation-header__messangers">
 							<a href="#" class="infomation-header__item">
 								<div class="infomation-header__img">
-									<picture><source srcset="img/header-info/telegram.webp" type="image/webp"><img alt="tg" src="img/header-info/telegram.png"></picture>
+									<picture><source srcset="img/footer/tg-big.webp" type="image/webp"><img src="img/footer/tg-big.png" alt="01"></picture>
 								</div>
 								<div class="infomation-header__label">WhatsApp</div>
 							</a>
 							<a href="#" class="infomation-header__item">
 								<div class="infomation-header__img">
-									<picture><source srcset="img/header-info/whatsapp.webp" type="image/webp"><img alt="ws" src="img/header-info/whatsapp.png"></picture>
+									<picture><source srcset="img/footer/wa-big.webp" type="image/webp"><img src="img/footer/wa-big.png" alt="02"></picture>
 								</div>
 								<div class="infomation-header__label">Telegram</div>
 							</a>
@@ -348,7 +348,7 @@
 										<div class="slide-portfolio__comment comment-portfolio" data-swiper-parallax="-600">
 											<div class="comment-portfolio__header">
 												<div class="comment-portfolio__avatar">
-													<picture><source srcset="img/portfolio/avatar.webp" type="image/webp"><img src="img/portfolio/avatar.png" alt="ava"></picture>
+													<picture><source srcset="img/ava-den.webp" type="image/webp"><img src="img/ava-den.jpg" alt="ava"></picture>
 												</div>
 												<div class="comment-portfolio__about-client">
 													<div class="comment-portfolio__title">Иванов Иван
@@ -784,15 +784,18 @@
 
 							<form class="feedback__form" action="#">
 								<div class="feedback__form__line">
-									<input autocomplete="off" type="text" name="activity" data-error="Ошибка" placeholder="Сфера деятельности (не обязательно)" class="input">
+									<label for="activity">Сфера деятельности (не обязательно)</label>
+									<input autocomplete="off" type="text" id="activity" name="activity" data-error="Ошибка" placeholder="" class="input">
 								</div>
 
 								<div class="feedback__form__line">
-									<input autocomplete="off" type="text" name="name" data-error="Ошибка" placeholder="Как к Вам обращаться?" class="input">
+									<label for="name">Как к Вам обращаться?</label>
+									<input autocomplete="off" type="text" id="name" name="name" data-error="Ошибка" placeholder="" class="input">
 								</div>
 
 								<div class="feedback__form__line">
-									<input autocomplete="off" type="text" name="phone" data-error="Ошибка" placeholder="Номер Вашего телефона" class="input">
+									<label for="phone">Номер Вашего телефона</label>
+									<input autocomplete="off" type="tel" id="phone" name="phone" data-error="Ошибка" placeholder="" class="input">
 								</div>
 								<button type="submit" class="button feedback__button">
 									Получить консультацию
@@ -832,10 +835,10 @@
 						<div class="footer__sub-title">Наши мессенджеры</div>
 						<div class="footer__messangers">
 							<a href="#" class="footer__link">
-								<picture><source srcset="img/footer/telegram.webp" type="image/webp"><img src="img/footer/telegram.png" alt="01"></picture>
+								<picture><source srcset="img/footer/tg-big.webp" type="image/webp"><img src="img/footer/tg-big.png" alt="01"></picture>
 							</a>
 							<a href="#" class="footer__link">
-								<picture><source srcset="img/footer/whatsapp.webp" type="image/webp"><img src="img/footer/whatsapp.png" alt="02"></picture>
+								<picture><source srcset="img/footer/wa-big.webp" type="image/webp"><img src="img/footer/wa-big.png" alt="02"></picture>
 							</a>
 						</div>
 					</div>
@@ -891,13 +894,26 @@
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close _icon-cross-circle-white"></button>
 				<div class="popup__text">
+					<div class="popup__message">
+						<div class="popup__icon _icon-adderd popup__icon_green"></div>
+						<div class="popup__text">
+							Ваша заявка успешно отправлена.<br>Спасибо за обращение!
+						</div>
+					</div>
+
+					<div class="popup__message">
+						<div class="popup__icon _icon-cross-circle-white popup__icon_red"></div>
+						<div class="popup__text">Упс! Произошла ошибка!</div>
+					</div>
 					<div class="popup__title">
 						Укажите Ваш номер телефона и мы перезвоним вам в ближайшее время
 					</div>
+					<div class="cross"></div>
 					<div class="popup__sub-title"></div>
 					<form action="#" class="popup__form">
 						<div class="popup__block">
-							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите Ваш телефон" class="input popup__input">
+							<label for="phone_number">Введите Ваш телефон</label>
+							<input autocomplete="off" type="tel" id="phone_number" data-error="Ошибка" class="input popup__input phone_number">
 						</div>
 						<div class="popup__block">
 							<button type="submit" class="button popup__button">Отправить</button>
@@ -907,7 +923,7 @@
 						Нажимая на кнопку "Получить предложение" Вы даете <span>согласие на обработку своих персональных
 							данных</span> и
 						соглашаетесь с
-						условиями <a href="#">Политики конфиденциальности</a>
+						условиями <a href="#privacypolicy">Политики конфиденциальности</a>
 					</div>
 				</div>
 			</div>
@@ -943,7 +959,7 @@
 						Нажимая на кнопку "Получить предложение" Вы даете <span>согласие на обработку своих персональных
 							данных</span> и
 						соглашаетесь с
-						условиями <a href="#">Политики конфиденциальности</a>
+						условиями <a href="#privacypolicy">Политики конфиденциальности</a>
 					</div>
 				</div>
 			</div>
@@ -1014,7 +1030,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20250215173932"></script>
+	<script src="js/app.min.js?_v=20250305155731"></script>
 </body>
 
 </html>
