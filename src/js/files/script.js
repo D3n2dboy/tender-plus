@@ -32,3 +32,25 @@ document.addEventListener("DOMContentLoaded", function () {
         item.addEventListener("click", () => updateActiveContent(index));
     });
 });
+
+
+// const elem = document.querySelector('.services'); // выбираем элемент, на котором будем отслеживать движение мыши
+
+// elem.addEventListener('mousemove', function (event) {
+//     // добавляем обработчик события "mousemove"
+//     const x = event.clientX; // получаем координату X мыши
+//     const y = event.clientY; // получаем координату Y мыши
+
+//     const item = elem.querySelector('.services__item');
+
+//     console.log(`Координаты мыши: x=${x}, y=${y}`); // выводим координаты мыши в консоль
+//     console.log(`Координаты 2: x=${x / 100}, y=${y / 100}`); // выводим координаты мыши в консоль
+
+//     const centerX = targetNode.offsetLeft + targetNode.offsetWidth / 2;
+//     const centerY = targetNode.offsetTop + targetNode.offsetHeight / 2;
+
+//     console.log(`centerX`);
+//     console.log(`centerY`);
+
+//     // item.style.cssText = `transform: rotateX(-${y / 100}deg) rotateY(${x / 100}deg);`
+// });

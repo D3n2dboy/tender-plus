@@ -61,6 +61,9 @@ body::after {
 	@media (max-width: $mobile) {
 		padding: rem(35);
 	}
+	@media (max-width: $mobileSmall) {
+		padding: rem(20);
+	}
 
 	.lock & {
 		visibility: visible;
@@ -72,6 +75,38 @@ body::after {
 
 	&__wrapper {
 	}
+
+	// .popup__message
+
+	&__message {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		font-size: rem(28);
+		font-weight: 500;
+		gap: rem(15);
+		line-height: 1.2;
+	}
+
+	// .popup__icon
+
+	&__icon {
+		padding: rem(20);
+		border-radius: 50%;
+		border: 1px solid #fafafa;
+		color: #fff;
+
+		&_green {
+			background-color: green;
+		}
+
+		&_red {
+			background-color: red;
+		}
+	}
+
+	// .popup__text
 
 	// .popup__content
 
@@ -105,6 +140,10 @@ body::after {
 		&:not(:last-child) {
 			margin-bottom: rem(20);
 		}
+
+		@media (max-width: $mobile) {
+			font-size: rem(25);
+		}
 	}
 
 	// .popup__sub-title
@@ -130,14 +169,33 @@ body::after {
 	// .popup__block
 
 	&__block {
+		position: relative;
 		&:not(:last-child) {
 			margin-bottom: rem(23);
+		}
+
+		label {
+			position: absolute;
+			top: 50%;
+			left: rem(35);
+			transform: translateY(-50%);
+			transition: all 0.2s ease;
+		}
+
+		&._form-focus {
+			label {
+				font-size: rem(14);
+				top: rem(15);
+			}
 		}
 	}
 
 	// .popup__input
 
 	&__input {
+		@media (max-width: $mobileSmall) {
+			padding: rem(20) rem(20);
+		}
 	}
 
 	// .popup__button
@@ -148,6 +206,10 @@ body::after {
 		justify-content: center;
 		padding: rem(25);
 		align-self: center;
+		@media (max-width: $mobileSmall) {
+			padding: rem(20) rem(15);
+			font-size: rem(18);
+		}
 	}
 
 	// .popup__footer

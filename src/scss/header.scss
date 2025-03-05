@@ -51,16 +51,11 @@
 	}
 }
 
-main {
-	transition: filter 0.3s ease;
-}
-
-.menu-open {
-	& main {
-		filter: blur(5px);
+._header-scroll {
+	& .header__wrapper {
+		box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
 	}
 }
-
 // hrader
 .header {
 	// .header__wrapper
@@ -72,12 +67,17 @@ main {
 		top: 0;
 		z-index: 50;
 		background-color: #fff;
+		//box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);
 	}
 	// .header__infomation
 
 	&__infomation {
 		position: relative;
 		z-index: 5;
+
+		@media (max-width: $mobile) {
+			background-color: #fff;
+		}
 	}
 
 	// .header__container
@@ -88,12 +88,13 @@ main {
 		align-items: center;
 		padding-top: rem(10);
 		padding-bottom: rem(10);
-		background-color: #fff;
+
 		@media (min-width: $tablet) {
 			min-height: 85px;
 		}
 		@media (max-width: $mobile) {
 			justify-content: space-between;
+			background-color: #fff;
 		}
 		@media (max-width: $mobile) {
 			border-bottom: 1px solid #e7e7e7;
@@ -144,12 +145,13 @@ main {
 			margin-left: rem(60);
 		}
 
-		@media (max-width: 773px) {
-			margin-left: rem(40);
+		@media (max-width: 783px) {
+			margin-left: rem(35);
 		}
 
 		@media (max-width: $mobile) {
 			//display: none;
+			visibility: hidden;
 			margin: 0;
 			position: absolute;
 			top: -100%;
@@ -164,6 +166,7 @@ main {
 			.menu-open & {
 				opacity: 1;
 				top: rem(76);
+				visibility: visible;
 			}
 		}
 
@@ -182,6 +185,12 @@ main {
 			display: flex;
 			align-items: center;
 			gap: rem(20);
+		}
+
+		@media (max-width: 555.98px) {
+			& .header__phone {
+				display: none;
+			}
 		}
 	}
 
@@ -204,10 +213,6 @@ main {
 			display: block;
 			margin: 0;
 		}
-
-		@media (max-width: 556px) {
-			display: none;
-		}
 	}
 
 	// .header__button
@@ -223,7 +228,6 @@ main {
 }
 .infomation-header {
 	border-bottom: 1px solid #e7e7e7;
-	background-color: #fff;
 	// .infomation-header__container
 
 	&__container {
@@ -235,6 +239,15 @@ main {
 
 		@media (max-width: 556px) {
 			font-size: rem(16);
+		}
+
+		@media (any-hover: hover) {
+			a {
+				transition: color 0.2s ease;
+				&:hover {
+					color: $accentColor;
+				}
+			}
 		}
 	}
 
@@ -284,14 +297,16 @@ main {
 		}
 
 		img {
-			width: 18px;
-			height: 17px;
+			width: rem(22);
+			height: rem(22);
 		}
 	}
 
 	// .infomation-header__label
 
 	&__label {
+		align-content: center;
+		line-height: 1;
 		@media (max-width: 556px) {
 			display: none;
 		}
@@ -303,6 +318,10 @@ main {
 
 	@media (max-width: 868.98px) {
 		font-size: rem(16);
+	}
+
+	@media (max-width: $mobile) {
+		min-height: 100vh;
 	}
 
 	// .menu__body

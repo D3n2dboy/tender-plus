@@ -3,14 +3,27 @@
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close _icon-cross-circle-white"></button>
 			<div class="popup__text">
+				<div class="popup__message">
+					<div class="popup__icon _icon-adderd popup__icon_green"></div>
+					<div class="popup__text">
+						Ваша заявка успешно отправлена.<br>Спасибо за обращение!
+					</div>
+				</div>
+
+				<div class="popup__message">
+					<div class="popup__icon _icon-cross-circle-white popup__icon_red"></div>
+					<div class="popup__text">Упс! Произошла ошибка!</div>
+				</div>
 				<div class="popup__title">
 					Укажите Ваш номер телефона и мы перезвоним вам в ближайшее время
 				</div>
+				<div class="cross"></div>
 				<div class="popup__sub-title"></div>
 				<form action="#" class="popup__form">
 					<div class="popup__block">
-						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-							placeholder="Введите Ваш телефон" class="input popup__input">
+						<label for="phone_number">Введите Ваш телефон</label>
+						<input autocomplete="off" type="tel" id="phone_number" data-error="Ошибка"
+							class="input popup__input phone_number">
 					</div>
 					<div class="popup__block">
 						<button type="submit" class="button popup__button">Отправить</button>
@@ -20,7 +33,7 @@
 					Нажимая на кнопку "Получить предложение" Вы даете <span>согласие на обработку своих персональных
 						данных</span> и
 					соглашаетесь с
-					условиями <a href="#">Политики конфиденциальности</a>
+					условиями <a href="#privacypolicy">Политики конфиденциальности</a>
 				</div>
 			</div>
 		</div>
@@ -59,7 +72,72 @@
 					Нажимая на кнопку "Получить предложение" Вы даете <span>согласие на обработку своих персональных
 						данных</span> и
 					соглашаетесь с
-					условиями <a href="#">Политики конфиденциальности</a>
+					условиями <a href="#privacypolicy">Политики конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="privacypolicy" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-cross-circle-white"></button>
+			<div class="popup__text">
+				<div class="popup__title">
+					Политика конфиденциальности
+				</div>
+				<div class="content">
+
+					<div>
+						<h3>Сбор информации</h3>
+						<p>При оставлении заявки на сайте «Tender-plus» клиенты предоставляют следующие
+							сведения:
+						</p>
+						<ul>
+							<li>Имя.</li>
+							<li>Контактный E-mail (обязательно).</li>
+							<li>Контактный номер телефона (обязательно).</li>
+							<li>Сферу своей деятельности (не обязательно)</li>
+						</ul>
+						<p>Также администрация веб-студии получает данные об IP-адресе посетителей, а также о типе
+							браузера,
+							времени нахождения на сайте и прочие подобные сведения. Сбор ведётся с помощью сервисов
+							статистики.
+						</p>
+					</div>
+					<div>
+						<h3>Использование информации</h3>
+						<p>Вся полученная информация используется администрацией «Tender-plus» исключительно в
+							целях
+							связи с клиентом.</p>
+					</div>
+					<div>
+						<h3>Защита персональных данных</h3>
+						<p>Веб-студия «Tender-plus» обязуется не разглашать сведения, полученные от клиентов. Она
+							хранится в базе данных на локальном компьютере администрации веб-студии. Доступ к компьютеру
+							надёжно защищён паролем, который имеется только у администратора сайта.</p>
+					</div>
+
+					<div>
+						<h3>Предоставление данных третьим лицам</h3>
+						<p>Полученные сведения не могут быть переданы третьим лицам, за исключением следующих случаев:
+						</p>
+						<ul>
+							<li>Для исполнения обязательств перед клиентом – только с его разрешения.</li>
+							<li>В соответствии с обоснованными и применимыми требованиями закона.</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Контакты</h3>
+						<p>По всем вопросам вы можете обращаться к администрации сайта.</p>
+						<ul>
+							<li>Телефон: <a href="">8 (8412) 70-02-84</a></li>
+							<li>E-mail: <a href=""></a>admin@on-www.ru</a></li>
+						</ul>
+					</div>
+					<p>Настоящая редакция политики конфиденциальности опубликована 13 февраля 2025 года и может быть
+						изменена администрацией без уведомления пользователей.</p>
 				</div>
 			</div>
 		</div>

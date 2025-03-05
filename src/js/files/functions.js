@@ -225,10 +225,10 @@ export function spollers() {
 						spollerTitle.removeAttribute('tabindex');
 						if (!spollerTitle.classList.contains('_spoller-active')) {
 							spollerTitle.nextElementSibling.hidden = true;
-							console.log(`YA NOMER 1`);
+							//console.log(`YA NOMER 1`);
 						}
 						else {
-							console.log(`Выполняюсь на изначально открытый споллер`);
+							//console.log(`Выполняюсь на изначально открытый споллер`);
 							spollerTitle.parentElement.classList.add('_active');
 						}
 					} else {
@@ -420,9 +420,13 @@ export function tabs() {
 export function menuInit() {
 	if (document.querySelector(".icon-menu")) {
 		document.addEventListener("click", function (e) {
+			//console.log(e.target);
 			if (bodyLockStatus && e.target.closest('.icon-menu')) {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-open");
+			} if (document.documentElement.closest('.lock') && e.target.closest('.menu__link')) {
+				bodyLockToggle();
+				document.documentElement.classList.remove("menu-open");
 			}
 		});
 	};

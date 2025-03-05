@@ -8,6 +8,10 @@ textarea {
 	-moz-appearance: none;
 	appearance: none;
 }
+
+label {
+	color: #838688;
+}
 .input {
 	//border-radius: 0 !important;
 	width: 100%;
@@ -15,6 +19,13 @@ textarea {
 	border: 1px solid #838688;
 	border-radius: rem(10);
 	padding: rem(27) rem(33);
+	transition: border 0.3s ease;
+
+	@media (any-hover: hover) {
+		&:hover {
+			border: 1px solid $accentColor;
+		}
+	}
 
 	&._form-focus {
 	}
